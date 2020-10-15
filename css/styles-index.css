@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: #bdc3c7;
+    background: -webkit-linear-gradient(to left, #2c3e50, #bdc3c7); 
+    background: linear-gradient(to left, #2c3e50, #bdc3c7); 
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.header{
+    display: inherit;
+    flex-direction: column;
+    align-items: center;
+}
+.header h2{
+    font-size: 50px;
+    color: #e0e0e0;
+}
+.header p{
+    text-align: center;
+    font-size: 30px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+.header img{
+    width: 120px;
+    height: 120px;
+    border-radius: 150px;
+    object-fit: cover;
+    padding: 20px;
+}
+.data-user{
+    display: flex;
+    flex-direction: column;
+}
+.firs-input-name{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
+}
+.firs-input-name input{
+    width: 42%;
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+.input-data-user{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+.input-data-user input{
+    width: 70%;
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    transition: 1s;
+}
+.input-data-user input:focus{
+    width: 80%;
+}
+.input-data-user img{
+    width: 7%;
+}
+.btn-submit{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+.btn-submit button{
+    width: 60%;
+    padding: 10px;;
+    font-size: 20px;
+    border: 1px solid;
+    border-radius: 10px;
+}
+.btn-submit button:hover{
+    background: #d6d6d6;
+}
+
+@media screen and (max-width: 700px){
+    .firs-input-name{ padding-top: 10px;}
+    .firs-input-name input{ width: 90%; margin: 10px;}
+}
